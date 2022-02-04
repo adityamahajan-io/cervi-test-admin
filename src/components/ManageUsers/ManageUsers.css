@@ -1,0 +1,82 @@
+.manageUsersButtonIcon{
+    width: 40%;
+    height: 80%;
+    color: #8ca1ff;
+    /* color: lightgray; */
+}
+
+.manageUsersButtonText{
+    color: rgb(92, 92, 92);
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.manageUsersContainer{   
+    height: 100%;
+}
+
+.manageUsersButtonDiv{
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 35%), 
+                0px 1px 1px 0px rgb(0 0 0 / 14%), 
+                0px 1px 3px 0px rgb(0 0 0 / 12%);
+    height: 100%;
+}
+
+
+.pTestTopInfo{
+    background-color: #fff5d3;
+    border-radius: 10px;
+    border: 1px solid #ffeeba;
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+.successBox{
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: inline-block;
+    color: #155724;
+    background-color: #cde9d4;
+    border-color: #c3e6cb;
+}
+
+.pTestCaution{
+    margin-top: 30px;
+    background-color: rgba(224, 86, 95, 0.2);
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: inline-block;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb
+
+}
+
+
+.pHomeReportElem:hover{
+    background-color: whitesmoke;
+}
+
+.pHomeReportElem{
+    padding: 10px 10px;
+}
+
+
+
+.uploadedImage{
+    max-height: 250px;
+    max-width: 80%;
+    margin-bottom: 30px;
+}
+
+.disableUser{
+    cursor: pointer;
+}

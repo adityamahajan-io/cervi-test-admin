@@ -1,38 +1,223 @@
-.App {
+/*Global Overrides*/
+
+body{
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  background-color: #f2f6fe;
+  margin: 0;
+  margin-bottom: 50px;
+
+}
+ 
+
+a{
+  text-decoration: none;
+  color: inherit !important;
+}
+
+
+
+/*Global Classes*/
+
+.centerDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerDiv1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.centerText{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MuiButton-root{
+  text-transform: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stretchDivHeight{
+  display: flex;
+  align-items: stretch;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.greyedText{
+  color:#696969;
+}
+
+/* Other Styles */
+
+.appContentWrapper{
+  margin-top: 80px;
+  margin-left: 17vw;
+  padding: 0px 30px;
+  margin-right: 50px;
+}
+
+
+
+.appBarWrapper{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.appBar{
+  background-color: transparent;
+  color: black;
+  height: 80px;
+  min-height: 80px;
+  background-color: #f2f6fe;
+  z-index: 1201;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pageHeader{
+
+
+}
+
+.scrollShadow{
+  box-shadow: 0 10px 20px -20px rgba(0, 0, 0, 0.1);
+}
+
+.appBarSearch{
+  width:40vw;
+  margin-left: 4vw;
+}
+
+.appBarLogo{
+  margin-left: 0px;
+  width: 13vw;
+}
+
+.sideBar{
+ width: 17vw;
+ margin-top: 80px;
+ top: 0;
+ left: 0;
+ position: fixed;
+ background-color: #f2f6fe;
+ overflow:hidden;
+ height: 100%;
+}
+
+
+.sideBarListWrapper{
+  width: 87%;
+  margin: 0 auto;
+}
+
+.sideListButtonParent{
+  width: 100%;
+  border-radius: 10px;
+  background-color: #dfe0fb;
+  margin-bottom: 12px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 
+                0px 1px 1px 0px rgb(0 0 0 / 14%), 
+                0px 1px 3px 0px rgb(0 0 0 / 12%); 
+
+}
+
+.sideBarListButton{
+  padding: 12px 5px;
+  border-radius: 10px;  
+}
+
+.sideBarListIcon{
+  margin-right: 10px;
+  margin-left: 15px;
+  color: inherit;
+}
+
+
+
+.sideBarListText{
+  font-weight: 500;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.bottomNavWrapper{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-nav {
+  width: 100%;
+  height: 60px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid rgb(230, 230, 230);
+  z-index: 160000;
+
+}
+.bn-tab {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.bottomNavIcon{
+  display: block;
+}
+
+.bottomTabText{
+  font-size: 0.7rem;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .sideBar{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .appContentWrapper{
+    margin-left: 0px;
+    margin-right: 0px;
   }
+
+  .bottom-nav{
+    display: flex;
+  }
+
+  body{
+    padding-bottom: 100px;
+  }
+}
+
+.linkActive{
+  color: white !important;
+  background: rgb(33,225,255);
+  background: linear-gradient(238deg, rgba(33,225,255,1) 0%, rgba(88,92,229,1) 65%);
+}
+
+.pageTitle{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.verifyCell{
+  cursor: pointer;
+}
+
+.verifyCell:hover{
+  background-color: rgba(0,255,0,0.2);
+}
+
+.verifyIcon{
+  fill: green
 }

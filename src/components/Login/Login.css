@@ -1,0 +1,21 @@
+.loginPageButton{
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    width: 300px;
+    text-transform: none;
+}
+
+.loginFormParent{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.loginFormFields{
+    margin-bottom: 20px;
+}
+
+.loginButton{
+    width: 100%;
+    padding: 15px 0px ;
+}
