@@ -51,8 +51,8 @@ export default function ManageUsersList(props) {
     } else {
       data.forEach((user, index)=>{
         if(user.disabled === false){
-        if(user.isVerified === undefined){
-          
+        if(user.isVerified === false){
+          return
         }
         const row = (
         <tr>

@@ -1,4 +1,4 @@
-export const apiURL = 'https://cervi-test-server.herokuapp.com'
+export const apiURL = 'http://127.0.0.1:8000'
 export const registerPatientURL =  apiURL+'/auth/register/patient'
 export const registerDoctorURL = apiURL+'/auth/register/doctor'
 export const registerHealthCareURL = apiURL+'/auth/register/healthcare'

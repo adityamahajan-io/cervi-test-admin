@@ -3,6 +3,7 @@ import { ListItemButton } from '@mui/material';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
 import * as React from 'react';
 import { useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
@@ -40,6 +41,15 @@ export default function PSideBar() {
                     <ListItemButton className="sideBarListButton" >
                         <SyncLockOutlined className="sideBarListIcon" fontSize="large"/>
                         <span className="sideBarListText">Pending Requests</span>
+                    </ListItemButton>
+                    </NavLink> 
+                </ListItem>
+
+                <ListItem disablePadding>
+                    <NavLink exact to={'/settings'} activeClassName="linkActive" className="sideListButtonParent">
+                    <ListItemButton className="sideBarListButton" >
+                        <DisplaySettingsIcon className="sideBarListIcon" fontSize="large"/>
+                        <span className="sideBarListText">Settings</span>
                     </ListItemButton>
                     </NavLink> 
                 </ListItem>

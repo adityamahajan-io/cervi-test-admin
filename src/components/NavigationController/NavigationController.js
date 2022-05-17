@@ -15,6 +15,8 @@ import PendingRequests from '../PendingRequests/PendingRequests'
 import ManageUsers from '../ManageUsers/ManageUsers'
 import ManageUsersList from '../ManageUsers/ManageUsersList/ManageUsersList'
 import PageNotFound404 from '../PageNotFound404'
+import Settings from '../Settings/Settings'
+import ModelsManagement from '../Settings/ModelsManagement/ModelsManagement'
 
 export default function NavigationController() {
 
@@ -54,6 +56,8 @@ export default function NavigationController() {
                 <ProtectedRoute path="/pendingRequests" exact component={PendingRequests}/>
                 <ProtectedRoute path="/manageUsers" exact component={ManageUsers}/>
                 <ProtectedRoute path="/manageUsers/list" exact component={ManageUsersList}/>
+                <ProtectedRoute path='/settings' exact component={Settings}/>
+                <ProtectedRoute path='/settings/models' exact component={ModelsManagement} />
                 <Route path='*' exact={true} component={PageNotFound404} />
             </Switch>
         </div>
